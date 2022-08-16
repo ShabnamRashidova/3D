@@ -16,11 +16,24 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Style -->
     <!-- Favicon -->
-   
-<link rel="icon" type="image/png"  href="./images/icon/favicon.ico">
-<link rel="manifest" href="/site.webmanifest">
+
+    <link rel="icon" type="image/png" href="./images/icon/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="./sass/style.css">
 </head>
+<style>
+    .image-1 img {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .image-bottom img {
+        width: 100%;
+        max-width: 240px;
+        margin-left: -55px;
+        margin-top: -25px;
+    }
+</style>
 
 <body>
     <div class="scroll-btn">
@@ -66,8 +79,10 @@
                             <ul class="nav-list">
                                 <li class="nav-item"><a href="./about.html" class="nav-link">Haqqımızda</a></li>
                                 <li class="nav-item"><a href="" class="nav-link">Fəaliyyətimiz</a></li>
-                                <li class="nav-item"><a href="./tedbirler_telimler.html" class="nav-link">Tədbirlər</a></li>
-                                <li class="nav-item"><a href="./tedbirler_telimler.html" class="nav-link">Təlimlər</a></li>
+                                <li class="nav-item"><a href="./tedbirler_telimler.html" class="nav-link">Tədbirlər</a>
+                                </li>
+                                <li class="nav-item"><a href="./tedbirler_telimler.html" class="nav-link">Təlimlər</a>
+                                </li>
                                 <li class="nav-item"><a href="" class="nav-link">Seanslar</a></li>
                                 <li class="nav-item"><a href="./gallery.html" class="nav-link">Qalereya</a></li>
                                 <li class="nav-item"><a href="./blog.html" class="nav-link">Xəbərlər</a></li>
@@ -83,14 +98,14 @@
 
     <!--Header end  -->
     <header class="header-mobile">
-        
-            <div class="header-mobile-top">
-                <div class="container-fluid">
+
+        <div class="header-mobile-top">
+            <div class="container-fluid">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-6">
                         <div class="nav-menu-btn"><i class="fa-solid fa-bars"></i></div>
                     </div>
-    
+
                     <div class="col-6 d-flex justify-content-end">
                         <ul class="header-social-list">
                             <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -100,37 +115,39 @@
                             <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
                         </ul>
                     </div>
-                  
+
                 </div>
             </div>
         </div>
         <div class="container ">
-<div class="row">
-    <div class="col-12 text-center">
-        
-            <div class="header-mobile-menu">
-                <div class="header-search">
-                    <form class="search-form">
-                        <input type="text" placeholder="Axtar...">
-                        <button><i class="fas fa-search"></i></button>
-                    </form>
+            <div class="row">
+                <div class="col-12 text-center">
+
+                    <div class="header-mobile-menu">
+                        <div class="header-search">
+                            <form class="search-form">
+                                <input type="text" placeholder="Axtar...">
+                                <button><i class="fas fa-search"></i></button>
+                            </form>
+                        </div>
+                        <nav class="nav">
+                            <ul class="nav-list">
+                                <li class="nav-item"><a href="./about.html" class="nav-link">Haqqımızda</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">Fəaliyyətimiz</a></li>
+                                <li class="nav-item"><a href="./tedbirler_telimler.html" class="nav-link">Tədbirlər</a>
+                                </li>
+                                <li class="nav-item"><a hrhref="./tedbirler_telimler.html" class="nav-link">Təlimlər</a>
+                                </li>
+                                <li class="nav-item"><a href="" class="nav-link">Seanslar</a></li>
+                                <li class="nav-item"><a href="./gallery.html" class="nav-link">Qalereya</a></li>
+                                <li class="nav-item"><a href="./blog.html" class="nav-link">Xəbərlər</a></li>
+                                <li class="nav-item"><a href="./contact.html" class="nav-link">Əlaqə</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="./about.html" class="nav-link">Haqqımızda</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Fəaliyyətimiz</a></li>
-                        <li class="nav-item"><a href="./tedbirler_telimler.html" class="nav-link">Tədbirlər</a></li>
-                        <li class="nav-item"><a hrhref="./tedbirler_telimler.html" class="nav-link">Təlimlər</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Seanslar</a></li>
-                        <li class="nav-item"><a href="./gallery.html" class="nav-link">Qalereya</a></li>
-                        <li class="nav-item"><a href="./blog.html" class="nav-link">Xəbərlər</a></li>
-                        <li class="nav-item"><a href="./contact.html" class="nav-link">Əlaqə</a></li>
-                    </ul>
-                </nav>
             </div>
         </div>
-    </div>
-</div>
     </header>
     <!-- Banner Section start -->
     <section class="banner-section">
@@ -158,9 +175,81 @@
     </section>
 
     <!-- Banner Section end -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="about-left">
+                        <div class="d-flex">
+                            <div class="image-1"><img src="./images/icon/Group 412.png" alt=""></div>
+                            <div class="image-bottom "><img src="./images/icon/3d-klb.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="about-right">
+                        <h5>Biz kimik?</h5>
+                        <div class="text">
+                            <p>
+                                3D Klubu: “Duyğu”, “Düşüncə” və “Davranış” vəhdətindən yaranmış bir “Business
+                                Networking” cəmiyyətidir.
+                            </p>
+                            <p>
+                                Əsas məqsədimiz həyat və iş fəaliyyətinin təkmilləşdirilməsi üçün effektiv təlim,
+                                seminar, sərgi, səfər və forumların təşkil edilməsi, eləcə də qarşılıqlı faydalı və
+                                dürüst biznes əlaqələrinin qurulmasıdır.
+                                Bir devizimiz var: “Öyrənərək işləyək, işləyərək öyrənək!”
+                            </p>
+                        </div>
 
+
+
+
+
+
+                    </div>
+                </div>
+                <div class="col-lg-4"></div>
+                <div class="col-lg-8">
+                    <div class="d-flex">
+                        <div class="box-item">
+                           <div class="img"> <img src="./images/about/3d-klb.png" alt=""></div>
+                        
+                        <div class="text">
+                            Düşüncə, duygu, 
+davranışın vəhdəti
+                        </div>
+                        </div>
+                        <div class="box-item">
+                           <div class="img"> <img src="./images/about/3d-klb.png" alt=""></div>
+                        
+                        <div class="text">
+                            Düşüncə, duygu, 
+davranışın vəhdəti
+                        </div>
+                        </div>
+                        <div class="box-item">
+                           <div class="img"> <img src="./images/about/3d-klb.png" alt=""></div>
+                        
+                        <div class="text">
+                            Düşüncə, duygu, 
+davranışın vəhdəti
+                        </div>
+                        </div>
+                        <div class="box-item">
+                           <div class="img"> <img src="./images/about/3d-klb.png" alt=""></div>
+                        
+                        <div class="text">
+                            Qarşılıqlı faydalı və 
+                            maraqlı mübadilə platforması
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- About section start-->
-     <!-- <section class="about-section">
+    <!-- <section class="about-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4" data-aos="fade-right">

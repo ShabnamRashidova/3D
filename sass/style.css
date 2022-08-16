@@ -334,128 +334,39 @@ ul {
 }
 
 .about-section {
-  height: 80vh;
-  padding-top: 30px;
-  margin-bottom: 30px;
+  padding: 60px 0;
 }
-.about-section .page-title {
-  margin-bottom: 30px;
-}
-.about-section .page-title ul {
-  display: flex;
-}
-.about-section .page-title ul li {
-  margin-right: 15px;
-}
-.about-section .page-title ul li a {
-  color: #838383;
-  font-size: 14px;
-  font-weight: 500;
-}
-.about-section .page-title .title {
-  font-size: 30px;
-  position: relative;
-  color: #3C3C3C;
-}
-.about-section .page-title .title::after {
-  position: absolute;
-  content: "";
-  background-color: #872d89;
-  height: 2.5px;
-  width: 45px;
-  left: -30px;
-  top: 20px;
-  transform: rotate(90deg);
-}
-.about-section .about-section-left {
-  position: relative;
-}
-.about-section .about-section-left .image-1 {
-  position: relative;
-}
-.about-section .about-section-left .image-1 img {
-  width: 100%;
-  max-width: 300px;
-}
-.about-section .about-section-left .image-2 {
-  top: -20px;
-  right: 30px;
-  position: absolute;
-}
-.about-section .about-section-left .image-3 {
-  top: 160px;
-  left: -250px;
-  position: absolute;
-}
-.about-section .about-section-right {
+.about-section .about-right {
   text-align: right;
+  color: #626262;
+  font-size: 16px;
 }
-.about-section .about-section-right.about-section-right-2 {
-  text-align: left;
-}
-.about-section .about-section-right .section-title {
-  font-weight: 600;
-  font-size: 32px;
+.about-section .about-right h5 {
+  font-size: 25px;
   position: relative;
   color: #3C3C3C;
 }
-.about-section .about-section-right .section-title.section-title-left {
-  text-align: left;
-}
-.about-section .about-section-right .section-title.section-title-left::after {
+.about-section .about-right h5::after {
   position: absolute;
   content: "";
-  background-color: #872d89;
-  height: 2.5px;
-  width: 45px;
-  left: -30px;
-  top: 20px;
-  transform: rotate(90deg);
-}
-.about-section .about-section-right .section-title::after {
-  position: absolute;
-  content: "";
-  background-color: #872d89;
-  height: 2.5px;
-  width: 45px;
   right: -30px;
-  top: 20px;
+  height: 2px;
+  border-radius: 4px;
   transform: rotate(90deg);
+  width: 50px;
+  top: 10px;
+  background-color: #872d89;
 }
-.about-section .about-section-right .text {
-  font-size: 16px;
-  color: #626262;
-}
-.about-section .about-section-right .about-bottom {
-  position: relative;
-  margin-top: 40px;
-}
-.about-section .about-section-right .about-bottom .item {
-  text-align: center;
-}
-.about-section .about-section-right .about-bottom .item .item-img {
-  padding: 20px;
-  background-color: #872D89;
-  width: 60px;
-  height: 60px;
+.about-section .box-item {
   display: flex;
-  border-radius: 50%;
-  margin: 10px auto;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
-.about-section .about-section-right .about-bottom .item .item-img img {
-  width: 40px;
-}
-.about-section .about-section-right .about-bottom .item .item-text {
-  font-size: 14px;
-  font-weight: 400;
-  color: #626262;
-}
-.about-section .about-section-right .about-bottom .image-4 {
-  right: -110px;
-  top: 80px;
-  position: absolute;
+.about-section .box-item .text {
+  font-size: 13px;
+  margin-top: 10px;
 }
 
 .section-title {
@@ -1119,39 +1030,6 @@ ul {
     font-size: 15px;
     padding: 11px;
   }
-  .about-section .about-section-left .image-1 img {
-    max-width: 240px;
-  }
-  .about-section .about-section-left .image-2 {
-    top: -30px;
-    right: 20px;
-    position: absolute;
-  }
-  .about-section .about-section-left .image-2 img {
-    max-width: 120px;
-  }
-  .about-section .about-section-left .image-3 img {
-    display: none;
-  }
-  .about-section .about-section-right .section-title {
-    font-size: 28px;
-  }
-  .about-section .about-section-right .text {
-    font-size: 15px;
-  }
-  .about-section .about-section-right .about-bottom .item {
-    text-align: center;
-  }
-  .about-section .about-section-right .about-bottom .item .item-img {
-    width: 50px;
-    height: 50px;
-  }
-  .about-section .about-section-right .about-bottom .item .item-img img {
-    width: 30px;
-  }
-  .about-section .about-section-right .about-bottom .image-4 {
-    display: none;
-  }
 }
 @media screen and (max-width: 992px) {
   .general-header {
@@ -1185,36 +1063,6 @@ ul {
     cursor: pointer;
     width: 100%;
     height: 100%;
-  }
-  .about-section {
-    margin-top: 40px;
-  }
-  .about-section .about-section-left {
-    margin-bottom: 50px;
-    text-align: center;
-  }
-  .about-section .about-section-left .image-1 img {
-    max-width: 250px;
-  }
-  .about-section .about-section-left .image-2 {
-    top: -65px;
-    right: 150px;
-    position: absolute;
-  }
-  .about-section .about-section-right {
-    text-align: center;
-  }
-  .about-section .about-section-right .section-title {
-    display: inline;
-  }
-  .about-section .about-section-right .section-title::after {
-    transform: rotate(180deg);
-    left: 0;
-    top: 40px;
-    width: 100%;
-  }
-  .about-section .about-section-right .text {
-    margin-top: 20px;
   }
   .general-footer .footer-top .footer-block.footer-logo-block {
     align-items: flex-start;
@@ -1261,17 +1109,6 @@ ul {
     width: 380px;
     height: 40px;
   }
-  .about-section .about-section-left .image-1 img {
-    width: 100%;
-    max-width: 220px;
-  }
-  .about-section .about-section-left .image-2 {
-    top: -44px;
-    right: 90px;
-  }
-  .about-section .about-section-left .image-2 img {
-    width: 120px;
-  }
   .general-footer {
     text-align: center;
   }
@@ -1307,13 +1144,6 @@ ul {
   }
 }
 @media screen and (max-width: 576px) {
-  .about-section .about-section-left .image-1 img {
-    max-width: 220px;
-  }
-  .about-section .about-section-left .image-2 {
-    top: -39px;
-    right: 97px;
-  }
   .contact-form-container .contact-form .contact-form-top {
     padding: 10px;
   }
@@ -1327,27 +1157,6 @@ ul {
   }
   .contact-form-container .contact-form .contact-form-bottom form input, .contact-form-container .contact-form .contact-form-bottom form textarea {
     width: 100%;
-  }
-}
-@media screen and (max-width: 544px) {
-  .about-section .about-section-left .image-1 img {
-    max-width: 220px;
-  }
-  .about-section .about-section-left .image-2 {
-    top: -38px;
-    right: 86px;
-  }
-}
-@media screen and (max-width: 523px) {
-  .about-section .about-section-left .image-1 img {
-    max-width: 190px;
-  }
-  .about-section .about-section-left .image-2 {
-    top: -34px;
-    right: 106px;
-  }
-  .about-section .about-section-left .image-2 img {
-    width: 100px;
   }
 }
 @media screen and (max-width: 412px) {
