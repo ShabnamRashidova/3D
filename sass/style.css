@@ -368,6 +368,11 @@ ul {
   font-size: 13px;
   margin-top: 10px;
 }
+.about-section .box-item img {
+  background-color: #872d89;
+  width: 60px;
+  border-radius: 50%;
+}
 
 .section-title {
   margin: 40px 0;
@@ -975,7 +980,8 @@ ul {
   align-items: center;
   justify-content: center;
 }
-.contact-form-container .contact-form .contact-form-bottom form input, .contact-form-container .contact-form .contact-form-bottom form textarea {
+.contact-form-container .contact-form .contact-form-bottom form input,
+.contact-form-container .contact-form .contact-form-bottom form textarea {
   width: 70%;
   border-bottom: 2px solid #ddd;
 }
@@ -1115,6 +1121,9 @@ ul {
   .general-footer .footer-top .footer-block.footer-logo-block {
     align-items: center;
   }
+  .general-footer .footer-top .footer-block.footer-logo-block .footer-logo img {
+    width: 120px;
+  }
 }
 @media (max-width: 715px) {
   .contact-form-container {
@@ -1139,7 +1148,8 @@ ul {
     font-size: 13px;
     height: 30px;
   }
-  .contact-form-container .contact-form .contact-form-bottom form input, .contact-form-container .contact-form .contact-form-bottom form textarea {
+  .contact-form-container .contact-form .contact-form-bottom form input,
+.contact-form-container .contact-form .contact-form-bottom form textarea {
     width: 100%;
   }
 }
@@ -1155,7 +1165,8 @@ ul {
   .contact-form-container .contact-form .contact-form-top .box .item .icon {
     font-size: 19px;
   }
-  .contact-form-container .contact-form .contact-form-bottom form input, .contact-form-container .contact-form .contact-form-bottom form textarea {
+  .contact-form-container .contact-form .contact-form-bottom form input,
+.contact-form-container .contact-form .contact-form-bottom form textarea {
     width: 100%;
   }
 }
