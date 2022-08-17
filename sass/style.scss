@@ -190,7 +190,7 @@ ul {
     .header-bottom {
         padding-top: 15px;
 
-       
+
 
         .header-logo {
             img {
@@ -314,7 +314,7 @@ ul {
 
     .header-mobile-menu {
         line-height: 30px;
-border-bottom: 2px solid #ddd;
+        border-bottom: 2px solid #ddd;
 
         @include center;
         flex-direction: column;
@@ -391,15 +391,15 @@ border-bottom: 2px solid #ddd;
     overflow-x: hidden;
 
     .banner-carousel {
-        
-       .slider-item{
-        position: relative;
-        padding: 328px 0;
-        background-size: cover !important;
-        background-position: center !important;
-        background-repeat: no-repeat !important;
-        width: 100%;
-       }
+
+        .slider-item {
+            position: relative;
+            padding: 328px 0;
+            background-size: cover !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            width: 100%;
+        }
     }
 }
 
@@ -430,21 +430,23 @@ border-bottom: 2px solid #ddd;
             }
         }
     }
-.box-container{
-    display: flex;
-}
+
+    .box-container {
+        display: flex;
+    }
+
     .box-item {
         @include center;
         flex-direction: column;
         text-align: center;
 
-        
+
         .text {
             font-size: 13px;
             margin-top: 10px;
         }
 
-        .img{
+        .img {
             background-color: #fff;
             box-shadow: $main-shadow;
             border: 1px solid #ddd;
@@ -452,11 +454,12 @@ border-bottom: 2px solid #ddd;
             @include center;
             border-radius: 50%;
             height: 60px;
+
             img {
-               
+
                 width: 70%;
-              
-                
+
+
             }
         }
     }
@@ -516,6 +519,7 @@ border-bottom: 2px solid #ddd;
 .training-section,
 .blog-section {
     overflow-x: hidden;
+
     .button-right {
         color: $second-color;
         padding: 10px 30px;
@@ -720,6 +724,7 @@ border-bottom: 2px solid #ddd;
 .general-footer {
     background-color: #FAFAFA;
     overflow-x: hidden;
+
     .footer-top {
         padding: 50px 0;
         border-bottom: 2px solid #A8A8A8;
@@ -834,7 +839,7 @@ border-bottom: 2px solid #ddd;
 }
 
 .section-1 {
-
+    overflow-x: hidden;
 
     .box {
         margin-bottom: 40px;
@@ -1005,7 +1010,8 @@ border-bottom: 2px solid #ddd;
         padding: 0 10px;
         margin-bottom: 30px;
         position: relative;
-border-left: 1px solid $main-color;
+        border-left: 1px solid $main-color;
+
         .title {
             text-transform: uppercase;
             font-weight: 600;
@@ -1155,11 +1161,11 @@ border-left: 1px solid $main-color;
 // }
 
 // .card {
-  
-    
+
+
 //     font-size: 3rem;
-    
-    
+
+
 //     height: 100%;
 //     width: 100%;
 //     border-radius: 4px;
@@ -1335,6 +1341,9 @@ border-left: 1px solid $main-color;
         }
     }
 
+    .banner-section .banner-carousel .slider-item {
+        padding: 270px 0;
+    }
 
 }
 
@@ -1384,7 +1393,48 @@ border-left: 1px solid $main-color;
         }
     }
 
+    .banner-section .banner-carousel .slider-item {
+        padding: 200px 0;
+    }
 
+    .about-section {
+        padding: 30px 0;
+.about-left{
+  .about-left-content{
+    justify-content: center;
+  }
+}
+        .about-right {
+            margin-top: 40px;
+            text-align: center;
+
+            h5 {
+                font-size: 22px;
+
+                &::after {
+                    content: none;
+                }
+
+                &::before {
+                    position: absolute;
+                    bottom: -5px;
+                    height: 3px;
+                    background-color: $main-color;
+                    width: 100px;
+                    content: "";
+                }
+            }
+        }
+
+        .box-item {
+            margin: 10px 0;
+
+            .text {
+                font-size: 13px;
+                margin-top: 10px;
+            }
+        }
+    }
 
     .general-footer {
         .footer-top {
@@ -1473,7 +1523,9 @@ border-left: 1px solid $main-color;
         }
     }
 
-
+    .banner-section .banner-carousel .slider-item {
+        padding: 160px 0;
+    }
 
     .general-footer {
         text-align: center;
@@ -1550,6 +1602,9 @@ border-left: 1px solid $main-color;
 }
 
 @media screen and (max-width:576px) {
+    .banner-section .banner-carousel .slider-item {
+        padding: 120px 0;
+    }
 
     .contact-form-container {
         .contact-form {

@@ -669,6 +669,9 @@ ul {
   padding-top: 10px;
 }
 
+.section-1 {
+  overflow-x: hidden;
+}
 .section-1 .box {
   margin-bottom: 40px;
   border-radius: 3px;
@@ -993,6 +996,9 @@ ul {
     font-size: 15px;
     padding: 11px;
   }
+  .banner-section .banner-carousel .slider-item {
+    padding: 270px 0;
+  }
 }
 @media screen and (max-width: 992px) {
   .general-header {
@@ -1026,6 +1032,40 @@ ul {
     cursor: pointer;
     width: 100%;
     height: 100%;
+  }
+  .banner-section .banner-carousel .slider-item {
+    padding: 200px 0;
+  }
+  .about-section {
+    padding: 30px 0;
+  }
+  .about-section .about-left .about-left-content {
+    justify-content: center;
+  }
+  .about-section .about-right {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .about-section .about-right h5 {
+    font-size: 22px;
+  }
+  .about-section .about-right h5::after {
+    content: none;
+  }
+  .about-section .about-right h5::before {
+    position: absolute;
+    bottom: -5px;
+    height: 3px;
+    background-color: #872d89;
+    width: 100px;
+    content: "";
+  }
+  .about-section .box-item {
+    margin: 10px 0;
+  }
+  .about-section .box-item .text {
+    font-size: 13px;
+    margin-top: 10px;
   }
   .general-footer .footer-top .footer-block.footer-logo-block {
     align-items: flex-start;
@@ -1072,6 +1112,9 @@ ul {
     width: 380px;
     height: 40px;
   }
+  .banner-section .banner-carousel .slider-item {
+    padding: 160px 0;
+  }
   .general-footer {
     text-align: center;
   }
@@ -1111,6 +1154,9 @@ ul {
   }
 }
 @media screen and (max-width: 576px) {
+  .banner-section .banner-carousel .slider-item {
+    padding: 120px 0;
+  }
   .contact-form-container .contact-form .contact-form-top {
     padding: 10px;
   }
