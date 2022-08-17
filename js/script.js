@@ -79,50 +79,15 @@ $(".nav-menu-btn").on('click',()=>{
 $(".nav-menu-btn i").toggleClass("fa-times");
 
 })
-// $('[data-fancybox]').fancybox({
-//     // Options will go here
-//     buttons : [
-//       'close'
-//     ],
-//     wheel : false,
-//     transitionEffect: "slide",
-//      // thumbs          : false,
-//     // hash            : false,
-//     loop            : true,
-//     // keyboard        : true,
-//     toolbar         : false,
-//     // animationEffect : false,
-//     // arrows          : true,
-//     clickContent    : false
-//   });
-
-
-
-
-
-
-
-  jQuery("#animated-thumbnails-gallery")
-  .justifiedGallery({
-    captions: false,
-    lastRow: "hide",
-    rowHeight: 180,
-    margins: 5
-  })
-  .on("jg.complete", function () {
-    window.lightGallery(
-      document.getElementById("animated-thumbnails-gallery"),
-      {
-        autoplayFirstVideo: false,
-        pager: false,
-        galleryId: "nature",
-        plugins: [lgZoom, lgThumbnail],
-        mobileSettings: {
-          controls: false,
-          showCloseIcon: false,
-          download: false,
-          rotate: false
-        }
-      }
-    );
+$(document).ready(function() {
+    $(".gallery a").fancybox();
   });
+  $(document).ready(function() {
+$(".gallery a").attr("data-fancybox","mygallery");
+$(".gallery a").each(function(){
+$(this).attr("data-caption", $(this).find("img").attr("alt"));
+$(this).attr("title", $(this).find("img").attr("alt"));
+});
+
+$(".gallery a").fancybox();
+});

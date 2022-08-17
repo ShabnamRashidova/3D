@@ -74,6 +74,7 @@ ul {
 }
 
 .general-header {
+  overflow-x: hidden;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 20px 0;
   border-bottom: 1px solid #ddd;
@@ -152,24 +153,6 @@ ul {
 .general-header .header-bottom {
   padding-top: 15px;
 }
-.general-header .header-bottom.header-fixed {
-  position: fixed;
-  top: 0;
-  padding: 10px;
-  width: 100%;
-  z-index: 99;
-  background-color: #fff;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  transition: 0.4s ease all;
-  transform: translateY(-300px);
-}
-.general-header .header-bottom.header-fixed .header-logo img {
-  margin-top: 0;
-  max-width: 240px;
-}
-.general-header .header-bottom.header-fixed.show {
-  transform: translateY(0);
-}
 .general-header .header-bottom .header-logo img {
   margin-top: -60px;
   max-width: 280px;
@@ -210,6 +193,7 @@ ul {
 
 .header-mobile {
   line-height: 65px;
+  overflow-x: hidden;
   display: none;
   background-color: #fff;
   z-index: 1000;
@@ -262,6 +246,7 @@ ul {
 }
 .header-mobile .header-mobile-menu {
   line-height: 30px;
+  border-bottom: 2px solid #ddd;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -325,16 +310,20 @@ ul {
 }
 
 .banner-section {
-  overflow: hidden;
+  overflow-x: hidden;
 }
-.banner-section .banner-carousel .banner-image img {
+.banner-section .banner-carousel .slider-item {
+  position: relative;
+  padding: 328px 0;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .about-section {
   padding: 60px 0;
+  overflow-x: hidden;
 }
 .about-section .about-right {
   text-align: right;
@@ -357,6 +346,9 @@ ul {
   top: 10px;
   background-color: #872d89;
 }
+.about-section .box-container {
+  display: flex;
+}
 .about-section .box-item {
   display: flex;
   align-items: center;
@@ -368,10 +360,19 @@ ul {
   font-size: 13px;
   margin-top: 10px;
 }
-.about-section .box-item img {
-  background-color: #872d89;
+.about-section .box-item .img {
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: 1px solid #ddd;
   width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
+  height: 60px;
+}
+.about-section .box-item .img img {
+  width: 70%;
 }
 
 .section-title {
@@ -387,19 +388,6 @@ ul {
 }
 .section-title .title.title-sm {
   font-size: 22px;
-}
-.section-title .title.title-sm::before {
-  width: 30%;
-  top: 15px;
-}
-.section-title .title::before {
-  position: absolute;
-  content: "";
-  border-top: 3px solid #872d89;
-  width: 50%;
-  left: -44px;
-  top: 30px;
-  transform: rotate(90deg);
 }
 .section-title .home-link {
   display: flex;
@@ -419,6 +407,10 @@ ul {
   color: #872d89;
 }
 
+.training-section,
+.blog-section {
+  overflow-x: hidden;
+}
 .training-section .button-right,
 .blog-section .button-right {
   color: #FFB900;
@@ -595,6 +587,7 @@ ul {
 
 .general-footer {
   background-color: #FAFAFA;
+  overflow-x: hidden;
 }
 .general-footer .footer-top {
   padding: 50px 0;
@@ -816,22 +809,13 @@ ul {
   padding: 0 10px;
   margin-bottom: 30px;
   position: relative;
+  border-left: 1px solid #872d89;
 }
 .section-inner .page-title .title {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 27px;
   color: #303030;
-}
-.section-inner .page-title::after {
-  position: absolute;
-  content: "";
-  left: -28px;
-  top: 32px;
-  transform: rotate(90deg);
-  height: 2px;
-  width: 55px;
-  background-color: #872d89;
 }
 .section-inner .page-title .home-link {
   display: flex;
@@ -896,33 +880,6 @@ ul {
 }
 .pagination .page-item .page-link:hover {
   box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.2);
-}
-
-.gallery-container .img-box {
-  border-radius: 4px;
-  overflow: hidden;
-}
-.gallery-container .img-box a .image-content {
-  position: relative;
-  overflow: hidden;
-}
-.gallery-container .img-box a .image-content:hover .overlay {
-  transform: scale(1);
-}
-.gallery-container .img-box a .image-content img {
-  border-radius: 4px;
-  width: 100%;
-}
-.gallery-container .img-box a .image-content .overlay {
-  transition: 0.4s ease all;
-  transform: scale(0);
-  border-radius: 4px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  position: absolute;
 }
 
 .contact-form-container .contact-form {
